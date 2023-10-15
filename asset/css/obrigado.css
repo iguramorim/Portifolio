@@ -1,0 +1,38 @@
+.obg-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.obg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.obg h1{
+    font-size: 5rem;
+    color: var(--cor-primaria);
+}
+
+.obg p{
+    font-size: 2rem;
+    color: var(--secundaria);
+    text-align: center;
+}
+
+.obg a{
+    padding: .8rem 2rem;
+    background-color: var(--cor-primaria);
+    border-radius: 6px;
+    color: white;
+    transition: .4s all ease;
+}
+
+.obg a:hover{
+    background-color: var(--secundaria);
+}

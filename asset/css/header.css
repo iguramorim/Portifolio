@@ -1,0 +1,166 @@
+.header{
+    box-shadow: 0 5px 15px #0000002c;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    transition: .4s all ease;
+}
+
+.header-container{
+    max-width: 1368px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.logo a h2{
+    color: var(--secundaria);
+}
+
+.logo a h2 span{
+    color: var(--cor-primaria);
+}
+
+.ul-desktop{
+    display: flex;
+    gap: 1rem;
+}
+
+.ul-desktop li{
+    list-style: none;
+}
+
+.ul-desktop li a{
+    color: #15161e;
+    padding: .8rem 1.5rem;
+    border-radius: 9px;
+    transition: .4s all ease;
+}
+
+.ul-desktop li a:hover{
+    background-color: #ff6347;
+    color: #f0f8ff;
+}
+
+.ul-desktop li a:active{
+    background-color: #ff0000;
+}
+
+.ul-desktop li .destaque-link{
+    background-color: #ff6347;
+    border: 3px solid #ff6347;
+    color: #f0f8ff;
+}
+
+.ul-desktop li .destaque-link:hover{
+    background: none;
+    color: #ff6347;
+}
+
+.ul-desktop li .destaque-link:active{
+    background: #ff6347;
+    color: #f0f8ff;
+}
+
+/* menu mobile =============================================== */
+
+.ul-mobile{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.ul-mobile li{
+    list-style: none;
+}
+
+.ul-mobile li a{
+    color: #15161e;
+    padding: .8rem 1.5rem;
+    border-radius: 9px;
+    transition: .4s all ease;
+}
+
+.ul-mobile li a:hover{
+    background-color: #ff6347;
+    color: #f0f8ff;
+}
+
+.ul-mobile li a:active{
+    background-color: #ff0000;
+}
+
+.ul-mobile li .destaque-link{
+    background-color: #ff6347;
+    border: 3px solid #ff6347;
+    color: #f0f8ff;
+}
+
+.ul-mobile li .destaque-link:hover{
+    background: none;
+    color: #ff6347;
+}
+
+.ul-mobile li .destaque-link:active{
+    background: #ff6347;
+    color: #f0f8ff;
+}
+
+/* menu mobile =============================================== */
+
+
+@media screen and (max-width: 769px) {
+
+    .navBar{
+        padding: .7rem 0;
+    }
+
+    .abrir{
+        position: relative;
+        z-index: 1;
+        font-size: 2.5rem;
+        color: var(--cor-primaria);
+        cursor: pointer;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+
+    .menu-mobile{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        padding: 3rem;
+        display: flex;
+        transition: all .4s ease;
+    }
+
+    .menu-mobile.active{
+        top: 0;
+    }
+
+    .ul-mobile{
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 769px){
+    
+    .menu-mobile{
+        display: none;
+    }
+
+    .abrir{
+        display: none;
+    }
+}

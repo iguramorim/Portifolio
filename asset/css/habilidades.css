@@ -1,0 +1,84 @@
+.habilidades{
+    padding: 5rem 0;
+}
+
+.habilidades-container{
+    max-width: 1368px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.tecnologias{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px;
+
+    grid-template-areas: 
+        "habi js"
+        "habi html"
+        "habi css"
+        "habi b"
+    ;
+}
+
+.habilidades-card{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tecnologias > div{
+    background-color: var(--cor-primaria);
+    padding: 2rem;
+    border-radius: 26px;
+}
+
+.tecnologias > div:nth-child(1){
+    grid-area: habi;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: none;
+    border-left: 2px solid var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-primaria);
+    border-radius: 2px;
+}
+
+.tecnologias > div:nth-child(1) h1{
+    color: var(--cor-primaria);
+    font-size: 3rem;
+}
+
+.tecnologias > div:nth-child(1) p{
+    color: var(--secundaria);
+}
+
+.tecnologias > div:nth-child(2){
+    grid-area: js;
+}
+
+.tecnologias > div:nth-child(3){
+    grid-area: html;
+}
+
+.tecnologias > div:nth-child(4){
+    grid-area: css;
+}
+
+.tecnologias > div:nth-child(5){
+    grid-area: b;
+}
+
+@media screen and (max-width: 769px){
+    .tecnologias{
+        grid-template-areas: 
+            "habi habi"
+            "js js"
+            "html html"
+            "css css"
+            "b b"
+        ;
+    }
+}

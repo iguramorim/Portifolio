@@ -1,0 +1,106 @@
+.contato{
+    padding: 5rem 0;
+}
+
+.contato-container{
+    max-width: 1368px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contato-container .img-contato img{
+    width: 100%;
+    max-width: 600px;
+}
+
+.formulario{
+    box-shadow: 10px 10px 10px #0000004c;
+    border: 1px solid #ccc;
+    border-radius: 26px;
+    padding: 2rem;
+}
+
+.formulario h1{
+    color: var(--cor-primaria);
+    border-bottom: 4px solid var(--secundaria);
+}
+
+.formulario form{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+.input{
+    outline: none;
+    width: 100%;
+    height: 38px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--secundaria);
+}
+
+.input::placeholder{
+    color: var(--secundaria);
+}
+
+#textarea{
+    border: none;
+    outline: none;
+    background: none;
+    border: 1px solid var(--secundaria);
+    border-radius: 6px;
+    padding: 18px;
+    resize: vertical;
+}
+
+.rede-sociais{
+    display: flex;
+    gap: 1rem;
+}
+
+.rede-sociais i{
+    padding: .5rem;
+    font-size: 1.2rem;
+    background-color: var(--cor-primaria);
+    color: white;
+    border-radius: 6px;
+    transition: .4s all ease;
+}
+
+.rede-sociais i:hover{
+    transform: scale(1.05);
+    background-color: var(--secundaria);
+}
+
+.submit-form{
+    width: 100%;
+    margin: 0 auto;
+    padding: .7rem 0;
+    border: none;
+    background-color: var(--cor-primaria);
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    transition: .4s all ease;
+}
+
+.submit-form:hover{
+    transform: scale(1.05);
+    background-color: var(--secundaria);
+}
+
+@media screen and (max-width: 769px){
+    .contato-container{
+        justify-content: center;
+    }
+    .contato-container .img-contato img{
+        display: none;
+    }
+}

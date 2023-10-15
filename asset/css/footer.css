@@ -1,0 +1,16 @@
+.footer{
+    background-color: var(--secundaria);
+}
+
+.footer-container{
+    max-width: 1368px;
+    margin: 0 auto;
+    padding: 5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container > div p{
+    color: var(  --cor-primaria);
+}

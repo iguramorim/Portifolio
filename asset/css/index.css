@@ -1,0 +1,36 @@
+@import './header.css';
+@import './main.css';
+@import './footer.css';
+@import './introducao.css';
+@import './sobre.css';
+@import './habilidades.css';
+@import './contato.css';
+@import './obrigado.css';
+
+@font-face {
+    font-family: bebas;
+    src: url(../fontes/bebas_neue/BebasNeue-Regular.woff2);
+}
+@font-face {
+    font-family: coolvetica;
+    src: url(../fontes/coolvetica/coolvetica\ rg.otf);
+}
+@font-face {
+    font-family: Gilgan;
+    src: url(../fontes/gilgan/Gilgan.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: coolvetica;
+    scroll-behavior: smooth;
+    letter-spacing: 1px;
+}
+
+:root{
+    --cor-primaria: #ff6347;
+    --secundaria: #515B60;
+}
