@@ -1,8 +1,8 @@
 .header{
+    background-color: #fff;
     box-shadow: 0 5px 15px #0000002c;
     position: fixed;
     width: 100%;
-    backdrop-filter: blur(10px);
     transition: .4s all ease;
 }
 
@@ -17,6 +17,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 2rem 0;
+    transition: .4s all ease;
+}
+
+.navBar.rolagem{
+    padding: 1.5rem 0;
 }
 
 .logo a h2{
@@ -119,6 +124,10 @@
 
     .navBar{
         padding: .7rem 0;
+    }
+
+    .navBar.rolagem{
+        padding: .5rem 0;
     }
 
     .abrir{

@@ -8,7 +8,7 @@
     <title>Igor Amorim</title>
 </head>
 <body>
-    <header> <!--header-->
+    <header>
         <section class="header">
             <div class="header-container">
                 <nav class="navBar">
@@ -120,37 +120,28 @@
 
         <section class="contato" id="contato">
             <div class="contato-container">
-                <div class="formulario">
+                <form class="form-contato"  action="https://formsubmit.co/igoramorin6@gmail.com" method="POST">
                     <div class="h1">
                         <h1>Fale comigo</h1>
                     </div>
-                    <form  action="https://formsubmit.co/igoramorin6@gmail.com" method="POST">
-                        <div class="nome-input ">
-                            <input class="input" type="text" placeholder="Digite seu nome:" required>
-                        </div>
 
-                        <div class="email-input ">
-                            <input class="input" type="email" placeholder="Digite seu e-mail:" required>
-                        </div>
+                    <input class="input" type="text" placeholder="Digite seu nome:" required>
 
-                        <div class="textarea">
-                            <textarea name="digite" id="textarea" cols="30" rows="10" placeholder="Deixe sua mensagem:" required></textarea>
-                        </div>
+                    <input class="input" type="email" placeholder="Digite seu e-mail:" required>
 
-                        <div class="rede-sociais">
-                            <a target="_blank" href="https://www.instagram.com/iguramorim/"><i class='bx bxl-instagram'></i></a>
-                            <a target="_blank" href="https://www.facebook.com/iguramorim/"><i class='bx bxl-facebook'></i></a>
-                            <a target="_blank" href="https://api.whatsapp.com/send?phone=5587999480809"><i class='bx bxl-whatsapp' ></i></a>
-                        </div>
+                    <textarea name="digite" id="textarea" cols="30" rows="10" placeholder="Deixe sua mensagem:" required></textarea>
 
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+                    <div class="rede-sociais">
+                        <a target="_blank" href="https://www.instagram.com/iguramorim/"><i class='bx bxl-instagram'></i></a>
+                        <a target="_blank" href="https://www.facebook.com/iguramorim/"><i class='bx bxl-facebook'></i></a>
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5587999480809"><i class='bx bxl-whatsapp' ></i></a>
+                    </div>
 
-                        <div class="submit">
-                            <input class="submit-form" type="submit">
-                        </div>                           
-                    </form>
-                </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+
+                    <input class="submit-form" type="submit">                        
+                </form>
 
                 <figure class="img-contato">
                     <img src="./asset/img/contato.png" alt="">

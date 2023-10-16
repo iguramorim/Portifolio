@@ -6,6 +6,6 @@ abrir.addEventListener('click', () =>{
 })
 
 document.addEventListener('scroll', () =>{
-    let header = document.querySelector('.header')
+    let header = document.querySelector('.navBar')
     header.classList.toggle('rolagem', scrollY > 10)
 })

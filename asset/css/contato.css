@@ -3,66 +3,52 @@
 }
 
 .contato-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato-container .h1 h1{
+    color: var(--cor-primaria);
+    font-size: 3rem;
+}
+
+.contato-container{
     max-width: 1368px;
     margin: 0 auto;
     padding: 0 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
 }
 
-.contato-container .img-contato img{
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 2rem;
     width: 100%;
     max-width: 600px;
 }
 
-.formulario{
-    box-shadow: 10px 10px 10px #0000004c;
-    border: 1px solid #ccc;
-    border-radius: 26px;
-    padding: 2rem;
-}
-
-.formulario h1{
-    color: var(--cor-primaria);
-    border-bottom: 4px solid var(--secundaria);
-}
-
-.formulario form{
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 18px;
-}
-
 .input{
     outline: none;
-    width: 100%;
-    height: 38px;
-    border: none;
-    background: none;
-    border-bottom: 1px solid var(--secundaria);
-}
-
-.input::placeholder{
-    color: var(--secundaria);
+    height: 40px;
+    padding: 10px;
+    border: 4px solid var(--cor-primaria);
+    border-radius: 6px;
 }
 
 #textarea{
-    border: none;
-    outline: none;
-    background: none;
-    border: 1px solid var(--secundaria);
-    border-radius: 6px;
-    padding: 18px;
     resize: vertical;
+    max-height: 180px;
+    outline: none;
+    padding: 10px;
+    border: 4px solid var(--cor-primaria);
+    border-radius: 6px;
 }
 
 .rede-sociais{
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .rede-sociais i{
@@ -80,10 +66,11 @@
 }
 
 .submit-form{
-    width: 100%;
-    margin: 0 auto;
     padding: .7rem 0;
     border: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
     background-color: var(--cor-primaria);
     border-radius: 6px;
     cursor: pointer;
@@ -96,11 +83,18 @@
     background-color: var(--secundaria);
 }
 
-@media screen and (max-width: 769px){
-    .contato-container{
-        justify-content: center;
+.img-contato img{
+    width: 100%;
+    max-width: 600px;
+}
+
+@media screen and (max-width: 769px) {
+
+    .contato{
+        padding: 5rem 0;
     }
-    .contato-container .img-contato img{
+    
+    .img-contato img{
         display: none;
     }
 }
