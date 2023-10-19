@@ -37,7 +37,8 @@
 
 #textarea{
     resize: vertical;
-    max-height: 180px;
+    max-height: 280px;
+    min-height: 200px;
     outline: none;
     padding: 10px;
     border: 2px solid var(--cor-primaria);
