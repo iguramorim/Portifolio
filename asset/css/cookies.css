@@ -1,0 +1,74 @@
+.cookies{
+    padding: 0 3rem;
+}
+.cookies-msg{
+    max-width: 1368px;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    display: none;
+    z-index: 2;
+}
+
+.cookies-msg.mostrar{
+    display: block;
+}
+
+.coolies-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 3rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px #0000004d;
+    padding: .5rem 1rem;
+    border-radius: 26px;
+    width: 100%;
+    max-width: 769px;
+}
+
+.coolies-text p{
+    color: #515B60;
+}
+
+.coolies-text button{
+    background: tomato;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+    border: 2px solid tomato;
+    transition: .4s all ease;
+}
+
+.coolies-text button:hover{
+    background: none;
+    color: tomato;
+    letter-spacing: 1px;
+}
+
+.coolies-text button:active{
+    background-color: tomato;
+    color: white;
+}
+
+@media screen and (max-width: 769px) {
+    .cookies-msg{
+    max-width: 1368px;
+    position: fixed;
+    bottom: 5%;
+    width: 100%;
+    display: none;
+}
+
+    .coolies-text{
+    flex-direction: column;
+    align-items: end;
+    gap: 15px;
+    max-width: 369px;
+}
+}
