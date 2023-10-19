@@ -31,16 +31,17 @@
     outline: none;
     height: 40px;
     padding: 10px;
-    border: 4px solid var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
     border-radius: 6px;
 }
 
 #textarea{
     resize: vertical;
-    max-height: 180px;
+    max-height: 280px;
+    min-height: 200px;
     outline: none;
     padding: 10px;
-    border: 4px solid var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
     border-radius: 6px;
 }
 
