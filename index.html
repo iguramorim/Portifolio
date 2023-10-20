@@ -20,10 +20,23 @@
     
                     <div class="menu-desktop">
                         <ul class="ul-desktop">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="#habilidades">Habilidades</a></li>
-                            <li><a class="destaque-link" href="#contato">Contato</a></li>
+                            <li class="li-link"><a class="a-link" href="index.html">Home</a></li>
+                            <li class="li-link"><a class="a-link" href="#sobre">Sobre</a></li>
+                            <li class="li-link"><a class="a-link" href="#habilidades">Habilidades</a></li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" id="btn-produto">
+                                  Produtos
+                                  <i class='bx bx-chevron-down' ></i>
+                                </a>
+                                <ul class="dropdown-menu" id="dropdown-menu">
+                                    <li class="dropdown-li">
+                                        <a class="dropdown-item" href="#">Em breve...</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="li-link"><a class="destaque-link" href="#contato">Contato</a></li>
                         </ul>
                     </div>
 
@@ -34,10 +47,23 @@
                 
                 <div class="menu-mobile">
                     <ul class="ul-mobile">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#habilidades">Habilidades</a></li>
-                        <li><a class="destaque-link" href="#contato">Contato</a></li>
+                        <li class="li-link-mobile"><a class="a-link-mobile" href="index.html">Home</a></li>
+                        <li class="li-link-mobile"><a class="a-link-mobile" href="#sobre">Sobre</a></li>
+                        <li class="li-link-mobile"><a class="a-link-mobile" href="#habilidades">Habilidades</a></li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" id="btn-produto-mobile">
+                              Produtos
+                              <i class='bx bx-chevron-down' ></i>
+                            </a>
+                            <ul class="dropdown-menu-mobile" id="dropdown-menu-mobile">
+                                <li class="dropdown-li">
+                                    <a class="dropdown-item" href="#">Em breve...</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="li-link-mobile"><a class="destaque-link" href="#contato">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -88,7 +114,7 @@
 
         <section class="habilidades" id="habilidades">
             <div class="habilidades-container">
-                <figure class="tecnologias">
+                <div class="tecnologias">
                    <div>
                         <h1>Habilidades</h1>
                         <p>Como desenvolvedor front-end, minhas habilidades são a base do que faço. Trabalhar com tecnologias web é mais do que apenas um trabalho para mim; é minha paixão.</p>
@@ -114,7 +140,7 @@
                         <h1>JavaScript</h1>
                         <p>JavaScript é a alma das interações na web. Como um entusiasta de JavaScript, tenho experiência na criação de interatividade de página web, desde pequenos toques de dinamismo até aplicações web complexas. Minha abordagem é orientada a objetos e modular, o que resulta em um código limpo e eficiente.</p>
                     </div>
-                </figure>
+                </div>
             </div>
         </section>
 

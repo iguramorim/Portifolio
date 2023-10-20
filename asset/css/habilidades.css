@@ -81,4 +81,8 @@
             "b b"
         ;
     }
+
+    .tecnologias p{
+        text-align: justify;
+    }
 }

@@ -82,4 +82,8 @@
     .img-introducao{
         margin-top: 1rem;
     }
+
+    .introducao-content p{
+        text-align: justify;
+    }
 }

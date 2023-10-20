@@ -1,5 +1,5 @@
 .header{
-    background-color: #fff;
+    background-color: white;
     box-shadow: 0 5px 15px #0000002c;
     position: fixed;
     width: 100%;
@@ -37,39 +37,42 @@
     gap: 1rem;
 }
 
-.ul-desktop li{
+.ul-desktop .li-link{
     list-style: none;
 }
 
-.ul-desktop li a{
-    color: #15161e;
+.ul-desktop .li-link .a-link{
+    color: var(--secundaria);
     padding: .8rem 1.5rem;
     border-radius: 9px;
     transition: .4s all ease;
 }
 
-.ul-desktop li a:hover{
-    background-color: #ff6347;
+.ul-desktop .li-link .a-link:hover{
+    background-color: var(--cor-primaria);
     color: #f0f8ff;
 }
 
-.ul-desktop li a:active{
+.ul-desktop .li-link .a-link:active{
     background-color: #ff0000;
 }
 
-.ul-desktop li .destaque-link{
-    background-color: #ff6347;
-    border: 3px solid #ff6347;
+.destaque-link{
+    background-color: var(--cor-primaria);
+    border: 3px solid var(--cor-primaria);
+    padding: .8rem 1.5rem;
+    border-radius: 9px;
+    transition: .4s all ease;
     color: #f0f8ff;
 }
 
-.ul-desktop li .destaque-link:hover{
+.destaque-link:hover{
     background: none;
-    color: #ff6347;
+    color: var(--cor-primaria);
 }
 
-.ul-desktop li .destaque-link:active{
-    background: #ff6347;
+.destaque-link:active{
+    background: var(--cor-primaria);
     color: #f0f8ff;
 }
 
@@ -81,46 +84,127 @@
     flex-direction: column;
 }
 
-.ul-mobile li{
+.li-link-mobile{
     list-style: none;
 }
 
-.ul-mobile li a{
-    color: #15161e;
+.a-link-mobile{
+    color: var(--secundaria);
     padding: .8rem 1.5rem;
     border-radius: 9px;
     transition: .4s all ease;
 }
 
-.ul-mobile li a:hover{
-    background-color: #ff6347;
+.a-link-mobile:hover{
+    background-color: var(--cor-primaria);
     color: #f0f8ff;
 }
 
-.ul-mobile li a:active{
+.a-link-mobile:active{
     background-color: #ff0000;
 }
 
-.ul-mobile li .destaque-link{
-    background-color: #ff6347;
-    border: 3px solid #ff6347;
+.destaque-link{
+    background-color: var(--cor-primaria);
+    border: 3px solid var(--cor-primaria);
     color: #f0f8ff;
 }
 
-.ul-mobile li .destaque-link:hover{
+.destaque-link:hover{
     background: none;
-    color: #ff6347;
+    color: var(--cor-primaria);
 }
 
-.ul-mobile li .destaque-link:active{
-    background: #ff6347;
+.destaque-link:active{
+    background: var(--cor-primaria);
     color: #f0f8ff;
 }
 
 /* menu mobile =============================================== */
 
+.dropdown{
+    list-style: none;
 
-@media screen and (max-width: 769px) {
+}
+
+.dropdown-toggle{
+    color: var(--secundaria);
+    list-style: none;
+}
+
+.dropdown-toggle{
+    color: var(--secundaria);
+    padding: .8rem 1.5rem;
+    border-radius: 9px;
+    transition: .4s all ease;
+    cursor: pointer;
+}
+
+.dropdown-toggle:hover{
+    background-color: var(--cor-primaria);
+    color: #f0f8ff;
+}
+
+.dropdown-toggle:active{
+    background-color: #ff0000;
+}
+
+.dropdown-menu{
+    margin-top: 20px;
+    position: absolute;
+    background-color: var(--secundaria);
+    padding: .9rem;
+    border-radius: 6px;
+    display: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+#dropdown-menu.active{
+    display: block;
+}
+
+.dropdown-li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.dropdown-item{
+    color: white;
+    border-bottom: 2px solid var(--secundaria);
+    transition: .4s all ease;
+    padding: .8rem;
+    border-radius: 6px;
+}
+
+.dropdown-item:hover{
+    border-bottom: 2px solid var(--cor-primaria);
+}
+
+.dropdown-item:active{
+    background-color: var(--cor-primaria);
+}
+
+/* dropdown */
+.dropdown-menu-mobile{
+    margin-top: 20px;
+    background-color: var(--secundaria);
+    width: 100%;
+    max-width: 300px;
+    padding: .9rem;
+    border-radius: 6px;
+    display: none;
+    transition: .4s all ease;
+}
+.dropdown-menu-mobile.mobile{
+   display: block;
+}
+/* dropdown */
+
+
+@media screen and (max-width: 885px) {
 
     .navBar{
         padding: .7rem 0;
@@ -144,7 +228,7 @@
 
     .menu-mobile{
         position: absolute;
-        top: -500px;
+        top: -700px;
         left: 0;
         background-color: white;
         width: 100%;
@@ -163,7 +247,7 @@
     }
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 885px){
     
     .menu-mobile{
         display: none;
