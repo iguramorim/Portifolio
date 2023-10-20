@@ -89,7 +89,7 @@
     max-width: 600px;
 }
 
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 1036px) {
 
     .form-contato{
         display: flex;

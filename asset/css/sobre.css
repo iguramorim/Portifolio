@@ -46,16 +46,17 @@
 
 @media screen and (max-width: 885px){
     .section-container{
-        max-width: 1368px;
-        margin: 0 auto;
-        padding: 0 3rem;
-        display: grid;
+        grid-column-gap: 50px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
             "img content"
             "sobreMim content"
         ;
     }
+
+    .sobre p{
+        text-align: justify;
+     }
 }
 
 @media screen and (max-width: 769px){

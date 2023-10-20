@@ -71,7 +71,7 @@
     grid-area: b;
 }
 
-@media screen and (max-width: 885px){
+@media screen and (max-width: 1036px){
     .tecnologias{
         gap: 10px;
         grid-template-areas: 
