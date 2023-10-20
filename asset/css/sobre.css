@@ -8,6 +8,14 @@
     padding: 0 3rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "img sobreMim"
+        "img content"
+    ;
+}
+
+.sobreMim{
+    grid-area: sobreMim;
 }
 
 .sobre h2{
@@ -19,6 +27,10 @@
     color: var(--secundaria);
 }
 
+.img-sobre{
+    grid-area: img;
+}
+
 .img-sobre img{
     width: 100%;
     max-width: 450px;
@@ -27,14 +39,37 @@
 .sobre-content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2rem;
+    grid-area: content;
+}
+
+@media screen and (max-width: 885px){
+    .section-container{
+        max-width: 1368px;
+        margin: 0 auto;
+        padding: 0 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "img content"
+            "sobreMim content"
+        ;
+    }
 }
 
 @media screen and (max-width: 769px){
     .section-container{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2rem;
+        max-width: 1368px;
+        margin: 0 auto;
+        padding: 0 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "img img"
+            "sobreMim sobreMim"
+            "content content"
+        ;
     }
 
     .img-sobre{

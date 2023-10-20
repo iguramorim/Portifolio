@@ -89,7 +89,16 @@
     max-width: 600px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 885px) {
+
+    .form-contato{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin-top: 2rem;
+        width: 100%;
+        max-width: initial;
+    }
 
     .contato{
         padding: 5rem 0;

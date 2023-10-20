@@ -71,6 +71,17 @@
     grid-area: b;
 }
 
+@media screen and (max-width: 885px){
+    .tecnologias{
+        gap: 10px;
+        grid-template-areas: 
+            "habi html"
+            "css b"
+            "js js"
+        ;
+    }
+}
+
 @media screen and (max-width: 769px){
     .tecnologias{
         grid-template-areas: 
