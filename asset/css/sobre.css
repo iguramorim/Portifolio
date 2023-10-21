@@ -7,6 +7,7 @@
     margin: 0 auto;
     padding: 0 3rem;
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
         "img sobreMim"
@@ -44,7 +45,7 @@
     grid-area: content;
 }
 
-@media screen and (max-width: 885px){
+@media screen and (max-width: 1036px){
     .section-container{
         grid-column-gap: 50px;
         grid-template-columns: repeat(2, 1fr);

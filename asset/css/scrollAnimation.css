@@ -1,0 +1,25 @@
+.scrollAnimation {
+   opacity: 0;
+   transition: 1s;
+}
+
+.scrollAnimation.from-top{
+    transform: translateY(-100%);
+}
+
+.scrollAnimation.from-bottom{
+    transform: translateY(100%);
+}
+
+.scrollAnimation.from-left{
+    transform: translateX(-100%);
+}
+
+.scrollAnimation.from-right{
+    transform: translateX(100%);
+}
+
+.scrollAnimation.show {
+    transform: translate(0);
+    opacity: 1;
+}

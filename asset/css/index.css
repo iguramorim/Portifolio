@@ -6,6 +6,7 @@
 @import './contato.css';
 @import './obrigado.css';
 @import './cookies.css';
+@import './scrollAnimation.css';
 
 @font-face {
     font-family: bebas;
