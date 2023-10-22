@@ -3,12 +3,12 @@
    transition: 1s;
 }
 
-.scrollAnimation.from-top{
-    transform: translateY(-100%);
-}
-
 .scrollAnimation.from-bottom{
     transform: translateY(100%);
+}
+
+/* .scrollAnimation.from-top{
+    transform: translateY(-100%);
 }
 
 .scrollAnimation.from-left{
@@ -17,7 +17,7 @@
 
 .scrollAnimation.from-right{
     transform: translateX(100%);
-}
+} */
 
 .scrollAnimation.show {
     transform: translate(0);
