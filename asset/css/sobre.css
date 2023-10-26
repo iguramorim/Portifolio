@@ -87,3 +87,10 @@
        text-align: justify;
     }
 }
+
+@media screen and (max-width: 360px){
+    .sobre h2{
+        color: var(--cor-primaria);
+        font-size: 2rem;
+    }
+}

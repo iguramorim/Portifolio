@@ -1,9 +1,10 @@
 // menu mobile
-const abrir = document.querySelector('.abrir')
-const navBar = document.querySelector('.menu-mobile')
+let hamburguer = document.querySelector('.hamburguer')
+let nav = document.querySelector('.menu')
 
-abrir.addEventListener('click', () =>{
-    navBar.classList.toggle('active')
+hamburguer.addEventListener('click', () => {
+    hamburguer.classList.toggle('active')
+    nav.classList.toggle('active')
 })
 // menu mobile
 
@@ -14,25 +15,3 @@ document.addEventListener('scroll', () =>{
     header.classList.toggle('rolagem', scrollY > 10)
 })
 // rolagem
-
-
-// Desktop
-const btnProduto = document.getElementById("btn-produto")
-const dropdownMenu = document.getElementById("dropdown-menu")
-const bx = document.getElementById('iconBX')
-
-btnProduto.addEventListener('click', ()=> {
-    dropdownMenu.classList.toggle('active')
-    bx.classList.toggle('bxicon')
-})
-// Desktop
-
-
-// Mobile dropdown
-const btnProdutoMobile = document.getElementById("btn-produto-mobile")
-const dropdownMenuMobile = document.getElementById("dropdown-menu-mobile")
-
-btnProdutoMobile.addEventListener('click', ()=> {
-    dropdownMenuMobile.classList.toggle('mobile')
-})
-// Mobile dropdown

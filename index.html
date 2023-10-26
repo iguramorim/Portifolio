@@ -18,63 +18,33 @@
                         </a>
                     </div>
     
-                    <div class="menu-desktop">
-                        <ul class="ul-desktop">
-                            <li class="li-link"><a class="a-link" href="index.html">Home</a></li>
+                    <div class="menu">
+                        <ul class="ul-menu">
+                            <li class="li-link"><a class="a-link" href="#home">Home</a></li>
                             <li class="li-link"><a class="a-link" href="#sobre">Sobre</a></li>
                             <li class="li-link"><a class="a-link" href="#habilidades">Habilidades</a></li>
-
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" id="btn-produto">
-                                  Produtos
-                                  <i id="iconBX" class='bx bx-chevron-down' ></i>
-                                </a>
-                                <ul class="dropdown-menu" id="dropdown-menu">
-                                    <li class="dropdown-li">
-                                        <a target="_blank" class="dropdown-item" href="./TransformeSuaVida.html">Transforme sua vida</a>
-                                    </li>
-                                </ul>
-                            </li>
-
+                            <li class="li-link"><a class="a-link" href="#projetos">Projetos</a></li>
                             <li class="li-link"><a class="destaque-link" href="#contato">Contato</a></li>
                         </ul>
                     </div>
 
-                    <div class="abrir">
-                        <i class='bx bx-menu'></i>
+                    <div class="hamburguer">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
                     </div>
                 </nav>
-                
-                <div class="menu-mobile">
-                    <ul class="ul-mobile">
-                        <li class="li-link-mobile"><a class="a-link-mobile" href="index.html">Home</a></li>
-                        <li class="li-link-mobile"><a class="a-link-mobile" href="#sobre">Sobre</a></li>
-                        <li class="li-link-mobile"><a class="a-link-mobile" href="#habilidades">Habilidades</a></li>
-
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" id="btn-produto-mobile">
-                              Produtos
-                              <i id="iconBX" class='bx bx-chevron-down' ></i>
-                            </a>
-                            <ul class="dropdown-menu-mobile" id="dropdown-menu-mobile">
-                                <li class="dropdown-li">
-                                    <a class="dropdown-item" href="./TransformeSuaVida.html">Transforme sua vida</a>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        <li class="li-link-mobile"><a class="destaque-link" href="#contato">Contato</a></li>
-                    </ul>
-                </div>
             </div>
         </section>
     </header>
 
-    <main>
+    <main id="home">
         <section class="introducao">
             <div class="introducao-container">
                 <div class="introducao-content">
-                    <h2 class="scrollAnimation">FRONT END<br>DEVELOPER<span>.</span></h2>
+                    <h2 class="scrollAnimation">
+                        FRONT END<br>DEVELOPER<span>.</span>
+                    </h2>
                     <p class="scrollAnimation">Olá! Sou Igor Amorim, um desenvolvedor front-end apaixonado por transformar ideias em experiências online impressionantes. Se você está procurando uma abordagem criativa e habilidades técnicas sólidas, você veio ao lugar certo.</p>
                     <ul>
                         <h1 class="scrollAnimation">O que ofereço:</h1>
@@ -141,6 +111,26 @@
                    <div class="habilidades-card scrollAnimation">
                         <h1 class="scrollAnimation">JavaScript</h1>
                         <p class="scrollAnimation from-bottom">JavaScript é a alma das interações na web. Como um entusiasta de JavaScript, tenho experiência na criação de interatividade de página web, desde pequenos toques de dinamismo até aplicações web complexas. Minha abordagem é orientada a objetos e modular, o que resulta em um código limpo e eficiente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project" id="projetos">
+            <div class="project-container">
+                <h1 class="scrollAnimation">Projetos</h1>
+                <div class="box-project">
+                    <div class="card-project scrollAnimation">
+                        <figure class="img-project">
+                            <img src="./asset/img/projetos/mobile.png" alt="projeto da rações vieira">
+                        </figure>
+                        <a target="_blank" href="https://www.racoesvieira.com.br/">
+                            Ver
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                    <div class="card-project emBreve scrollAnimation">
+                        <h4>Em breve</h4>
                     </div>
                 </div>
             </div>

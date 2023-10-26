@@ -80,6 +80,7 @@
             "js js"
         ;
     }
+    
 }
 
 @media screen and (max-width: 769px){
@@ -95,5 +96,13 @@
 
     .tecnologias p{
         text-align: justify;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    .tecnologias > div:nth-child(1) h1{
+        color: var(--cor-primaria);
+        font-size: 2rem;
     }
 }
