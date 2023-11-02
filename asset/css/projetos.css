@@ -15,89 +15,96 @@
 
 .box-project{
      display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     gap: 2rem;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 300px)); /* lembrar de colocar o tamanho maximo 1fr */
+     gap: 1rem;
+
 }
 
 .card-project{
      width: 100%;
-     max-width: 600px;
-     display:  flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     background-color: white;
-     box-shadow: 0 5px 15px #0000002c;
+     height: 400px;
+     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.372);
      border-radius: 16px;
      padding: 2rem;
      position: relative;
      overflow: hidden;
-     transition: .4s;
 }
 
-.emBreve h4{
-     font-size: 2rem;
-     color: var(--cor-primaria);
+.circle-project-card{
+     background-color: tomato;
+     border-radius: 50%;
+     position: absolute;
+     top: -200px;
+     left: 0;
+     width: 150%;
+     height: 100%;
+     transform: rotate(10deg);
+     z-index: -1;
+     transition: .4s all ease;
+}
+
+.img-project{
+     position: relative;
 }
 
 .img-project img{
-     width: 100%;
-}
-
-.card-project:hover::before{
-     content: '';
-     width: 100%;
-     height: 100%;
-     background-color: #00000083;
-     display: block;
      position: absolute;
+     top: 80px;
+     width: 100%;
+     transition: .4s all ease;
 }
 
-.card-project:hover a{
-     bottom: 30%;
-     transform: translateY(-30%);
-}
-
-.card-project a{
-     border-radius: 16px;
-     width: 200px;
-     background-color: var(--cor-primaria);
+.paragrafo-card-project{
+     padding: 2rem;
+     position: absolute;
+     left: 0;
+     bottom: -200px;
+     transition: .4s all ease;
+     font-size: .8rem;
      color: white;
-     padding: 1rem 0;
-     margin-top: 2rem;
-     position: absolute;
-     bottom: -30%;
-     transition: .4s;
-     border: 2px solid var(--cor-primaria);
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 16px;
-     letter-spacing: 3px;
 }
 
-.card-project a:hover{
-     background: #0000006a;
-     backdrop-filter: blur(10px);
+.link-card-project{
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     bottom: -40px;
+     transition: .4s all ease;
+     background-color: var(--cor-primaria);
+     border: 2px solid var(--cor-primaria);
+     width: 200px;
+     border-radius: 16px;
+     padding: .5rem 0;
+     text-align: center;
+     color: white;
+}
+
+.link-card-project:hover{
+     background-color: transparent;
      color: var(--cor-primaria);
 }
 
-@media screen and (max-width: 600px) {
-     .project-container h1{
-          margin-top: initial;
-     }
-
-     .box-project{
-          grid-template-columns: repeat(1, 1fr);
-     }
-
-     .emBreve{
-          height: 300px;
-     }
+.card-project:hover .img-project img{
+     width: 100px;
+     object-fit: cover;
+     top: 0px;
 }
 
-@media screen and (max-width: 360px){
-     .project-container h1{
-          font-size: 2rem;
-     }
- }
+.card-project:hover .paragrafo-card-project{
+     bottom: 100px;
+}
+
+.card-project:hover .link-card-project{
+     bottom: 10%;
+}
+
+.card-project:hover .circle-project-card{
+     border-radius: 2px;
+     position: absolute;
+     top: -100px;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     transform: rotate(0deg);
+     z-index: -1;
+}
