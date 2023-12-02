@@ -2,10 +2,14 @@
     padding: 5rem 0;
 }
 
-.habilidades-container{
+/* .habilidades-container{
     max-width: 1368px;
     margin: 0 auto;
     padding: 0 3rem;
+} */
+
+.habilidades-card i{
+    font-size: 3rem;
 }
 
 .tecnologias{
@@ -48,7 +52,7 @@
 
 .tecnologias > div:nth-child(1) h1{
     color: var(--cor-primaria);
-    font-size: 3rem;
+    font-size: var(--font-size-title);
 }
 
 .tecnologias > div:nth-child(1) p{

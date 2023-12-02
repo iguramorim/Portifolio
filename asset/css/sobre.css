@@ -1,96 +1,73 @@
-.sobre{
-    padding: 5rem 0;
-}
-
 .section-container{
-    max-width: 1368px;
-    margin: 0 auto;
-    padding: 0 3rem;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-        "img sobreMim"
-        "img content"
-    ;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
 }
 
-.sobreMim{
-    grid-area: sobreMim;
-}
-
-.sobre h2{
-    color: var(--cor-primaria);
-    font-size: 3rem;
-}
-
-.sobre p{
-    color: var(--secundaria);
+.section-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ff6347;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(10% at 0% 0%);
 }
 
 .img-sobre{
-    grid-area: img;
+    width: 100%;
 }
 
 .img-sobre img{
     width: 100%;
-    max-width: 450px;
 }
 
-.sobre-content{
+.sobreMim{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 2rem;
-    grid-area: content;
+    gap: 1rem;
 }
 
-@media screen and (max-width: 1036px){
-    .section-container{
-        grid-column-gap: 50px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-            "img content"
-            "sobreMim content"
-        ;
+.sobreMim h2{
+    color: var(--cor-primaria);
+    font-size: var(--font-size-title);
+}
+
+.sobreMim p{
+    color: var(--secundaria);
+}
+
+@media screen and (max-width: 920px){
+    .section-container::before{
+        clip-path: circle(15% at 0% 0%);
     }
 
-    .sobre p{
+    .sobreMim{
+        width: 100%;
+    }
+
+    .sobreMim p{
+        color: var(--secundaria);
         text-align: justify;
-     }
+    }
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 600px){
+    .section-container::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #ff6347;
+        width: 100%;
+        height: 100%;
+        clip-path: circle(10% at 0% 0%);
+    }
+
     .section-container{
-        max-width: 1368px;
-        margin: 0 auto;
-        padding: 0 3rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-            "img img"
-            "sobreMim sobreMim"
-            "content content"
-        ;
+        flex-direction: column;
     }
-
-    .img-sobre{
-        display: flex;
-    }
-
-    .img-sobre img{
-        max-width: 250px;
-        margin: 0 auto;
-    }
-
-    .sobre p{
-       text-align: justify;
-    }
-}
-
-@media screen and (max-width: 360px){
-    .sobre h2{
-        color: var(--cor-primaria);
-        font-size: 2rem;
-    }
+    
 }

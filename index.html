@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./asset/css/index.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11398225831"></script>
@@ -20,6 +22,7 @@
 <body>
     <header>
         <section class="header">
+            <div class="fechar-menu"></div>
             <div class="header-container">
                 <nav class="navBar">
                     <div class="logo">
@@ -50,7 +53,8 @@
 
     <main id="home">
         <section class="introducao">
-            <div class="introducao-container">
+            <div class="circle"></div>
+            <div class="introducao-container center-auto">
                 <div class="introducao-content">
                     <h2 class="scrollAnimation">
                         FRONT END<br>DEVELOPER<span>.</span>
@@ -67,35 +71,74 @@
                 </div>
 
                 <figure class="img-introducao">
-                    <img class="scrollAnimation" src="./asset/img/Developer activity-bro.svg" alt="">
+                    <img class="scrollAnimation" src="./asset/img/intro-img/Code typing-pana.svg" alt="">
                 </figure>
             </div>
         </section>
 
+        <section class="beneficios">
+            <h3 class="center-auto">Ter um site oferece uma série de benefícios para empresas, independentemente do porte ou setor. Alguns dos principais benefícios incluem:</h3>
+            <div class="swiper mySwiper center-auto">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <h1>Visibilidade Online</h1>
+                    <p>Um site proporciona uma presença online 24 horas por dia, sete dias por semana, permitindo que clientes em potencial encontrem informações sobre sua empresa a qualquer momento.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h1>Credibilidade e Profissionalismo</h1>
+                    <p>Ter um site bem projetado e atualizado transmite credibilidade e profissionalismo aos clientes. É muitas vezes a primeira impressão que os clientes têm de uma empresa.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h1>Acesso Global</h1>
+                    <p>Um site permite que sua empresa alcance uma audiência global, expandindo o alcance além das fronteiras geográficas locais e aumentando as oportunidades de negócios.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h1>Marketing Eficiente</h1>
+                    <p>Um site é uma ferramenta poderosa para marketing online. Ele fornece uma plataforma para promover produtos, serviços e eventos, além de permitir estratégias de marketing digital, como SEO (otimização para mecanismos de busca) e marketing de conteúdo.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h1>Interação com Clientes</h1>
+                    <p>Através de formulários de contato, chat online ou redes sociais integradas, um site oferece oportunidades para interagir com os clientes, receber feedback e fornecer suporte ao cliente.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h1>Informações Atualizadas</h1>
+                    <p>Um site é um canal eficaz para manter os clientes informados sobre atualizações, lançamentos de produtos, promoções e eventos relacionados à empresa.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h1>Vendas Online</h1>
+                    <p>Para empresas que oferecem produtos, um site pode servir como uma plataforma de comércio eletrônico, possibilitando vendas online e alcançando clientes que preferem comprar pela internet.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h1>Análise de Dados</h1>
+                    <p>Ferramentas de análise integradas ao site permitem monitorar o tráfego, o comportamento do usuário e outras métricas valiosas para tomar decisões informadas e otimizar a presença online.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h1>Competitividade</h1>
+                    <p>Em muitos setores, a presença online é crucial para permanecer competitivo. Empresas sem site podem perder oportunidades para concorrentes que oferecem informações e serviços online.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h1>Acesso Móvel</h1>
+                    <p>Com a crescente utilização de dispositivos móveis, ter um site responsivo garante que os clientes possam acessar facilmente informações sobre sua empresa em smartphones e tablets.</p>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+
         <section class="sobre" id="sobre">
-            <div class="section-container">
+            <div class="section-container center-auto">
                 <figure class="img-sobre">
                     <img class="scrollAnimation" src="./asset/img/sobre.png" alt="sobre">
                 </figure>
                 <div class="sobreMim scrollAnimation">
                     <h2>Sobre mim</h2>
-                    <p>Olá, sou Igor Amorim, um entusiasta de desenvolvimento front-end apaixonado por transformar conceitos em realidade digital. Com uma mente criativa e uma forte afinidade com a tecnologia, estou comprometido em criar experiências online cativantes e eficientes.</p>
-                    <br>
-                </div>
-                <div  class="sobre-content">
-                    <p class="scrollAnimation">Minha jornada no mundo do desenvolvimento começou com uma curiosidade insaciável. Aprendi a linguagem da web, HTML, e logo me apaixonei pela combinação de estilo com CSS e interatividade com JavaScript. Isso me levou a explorar frameworks modernos, como React, Vue.js e Angular, para construir aplicações web dinâmicas e de alto desempenho.</p>
-
-                    <p class="scrollAnimation">Minha abordagem de trabalho é centrada no cliente. Entendo a importância de ouvir atentamente suas necessidades e objetivos para criar soluções sob medida que superem suas expectativas. Sempre me esforço para aprimorar a usabilidade e a estética do seu projeto.</p>
-
-                    <p class="scrollAnimation">Meu objetivo é tornar sua presença online memorável. Seja você um empreendedor ambicioso, uma pequena empresa em crescimento ou uma organização estabelecida, estou aqui para ajudar a alcançar o sucesso online. Vamos colaborar e criar algo incrível juntos.</p>
-
-                    <p class="scrollAnimation">Estou ansioso para ouvir sobre seu próximo projeto. Vamos trabalhar juntos para tornar sua visão uma realidade. Fale comigo hoje mesmo e vamos começar a construir algo incrível.</p>
+                    <p>Olá, sou Igor Amorim, um entusiasta de desenvolvimento front-end dedicado a transformar ideias em experiências digitais envolventes. Iniciei minha jornada aprendendo HTML e me apaixonei pela harmonia entre estilo (CSS) e interatividade (JavaScript). Ao explorar frameworks como React, Vue.js e Angular, busco constantemente aprimorar a usabilidade e a estética. Minha abordagem é centrada no cliente, entendendo suas necessidades para criar soluções personalizadas e superar expectativas. Meu objetivo é fazer sua presença online memorável, auxiliando empreendedores e empresas a alcançar o sucesso. Vamos colaborar e tornar sua visão uma realidade incrível. Estou ansioso para ouvir sobre seu próximo projeto e começar a construir algo extraordinário juntos.</p>
                 </div>
             </div>
         </section>
 
         <section class="habilidades" id="habilidades">
-            <div class="habilidades-container">
+            <div class="habilidades-container center-auto">
                 <div class="tecnologias">
                    <div>
                         <h1 class="scrollAnimation">Habilidades</h1>
@@ -104,21 +147,25 @@
                    </div>
 
                    <div class="habilidades-card scrollAnimation">
+                        <i class='bx bxl-bootstrap'></i>
                         <h1 class="scrollAnimation">Bootstrap</h1>
                         <p class="scrollAnimation from-bottom">Bootstrap é uma ferramenta valiosa que acelera o desenvolvimento e garante que os sites sejam responsivos e consistentes. Minha proficiência em Bootstrap me permite criar interfaces web atraentes, seguindo as melhores práticas de design responsivo.</p>
                     </div>
 
                    <div class="habilidades-card scrollAnimation">
+                        <i class='bx bxl-html5' ></i>
                         <h1 class="scrollAnimation">HTML</h1>
                         <p class="scrollAnimation from-bottom">HTML é a linguagem que dá estrutura à web. Eu sou proficiente em criar código HTML semântico, que não apenas funciona bem, mas também é acessível e otimizado para mecanismos de busca.</p>
                    </div>
 
                    <div class="habilidades-card scrollAnimation">
+                        <i class='bx bxl-css3' ></i>
                         <h1 class="scrollAnimation">CSS</h1>
                         <p class="scrollAnimation from-bottom">O CSS é o que dá vida à web. Sou especialista em criar estilos e layouts atraentes e responsivos. Posso transformar designs em código CSS de alta qualidade para garantir que seu site seja visualmente atraente e funcione perfeitamente em todas as telas.</p>
                    </div>
 
                    <div class="habilidades-card scrollAnimation">
+                        <i class='bx bxl-javascript' ></i>
                         <h1 class="scrollAnimation">JavaScript</h1>
                         <p class="scrollAnimation from-bottom">JavaScript é a alma das interações na web. Como um entusiasta de JavaScript, tenho experiência na criação de interatividade de página web, desde pequenos toques de dinamismo até aplicações web complexas. Minha abordagem é orientada a objetos e modular, o que resulta em um código limpo e eficiente.</p>
                     </div>
@@ -192,7 +239,6 @@
             <div class="footer-container">
                 <div>
                     <p>&copy; 2023 Igor Amorim - Todos os direitos reservados</p>
-                    <div align=center><a href='https://contador.s12.com.br'><img src='https://contador.s12.com.br/img-Z7ba095CC1c7B4b1-47.gif' border='0' alt='visitas' width="3px"></a><script type='text/javascript' src='https://contador.s12.com.br/ad.js?id=Z7ba095CC1c7B4b1'></script></div>
                 </div>
             </div>
         </section>
@@ -210,7 +256,8 @@
         </div>
    </div>
 
-
+   <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./asset/js/script.js"></script>
     <script src="./asset/js/cookies.js"></script>
     <script src="./asset/js/scrollAnimation.js"></script>

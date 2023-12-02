@@ -1,13 +1,14 @@
-@import './header.css';
-@import './footer.css';
-@import './introducao.css';
-@import './sobre.css';
-@import './habilidades.css';
-@import './contato.css';
-@import './obrigado.css';
-@import './cookies.css';
-@import './scrollAnimation.css';
-@import './projetos.css';
+@import "./header.css";
+@import "./footer.css";
+@import "./introducao.css";
+@import "./sobre.css";
+@import "./habilidades.css";
+@import "./contato.css";
+@import "./obrigado.css";
+@import "./cookies.css";
+@import "./scrollAnimation.css";
+@import "./projetos.css";
+@import "./beneficios.css";
 
 @font-face {
     font-family: bebas;
@@ -22,7 +23,7 @@
     src: url(../fontes/gilgan/Gilgan.otf);
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -32,7 +33,37 @@
     letter-spacing: 1px;
 }
 
-:root{
+body {
+    overflow-x: hidden;
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: #ff6347;
+    --sb-size: 11px;
+
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+.center-auto {
+    max-width: 1368px;
+    margin: 0 auto;
+    padding: 36px 3rem;
+}
+
+:root {
     --cor-primaria: #ff6347;
-    --secundaria: #515B60;
+    --secundaria: #515b60;
+    --font-size-title: 2rem;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 1px;
 }

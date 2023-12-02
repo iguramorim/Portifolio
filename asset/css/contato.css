@@ -56,6 +56,7 @@
     padding: .5rem;
     font-size: 1.8rem;
     background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
     color: white;
     border-radius: 6px;
     transition: .4s all ease;
@@ -63,7 +64,8 @@
 
 .rede-sociais i:hover{
     transform: scale(1.05);
-    background-color: var(--secundaria);
+    background-color: transparent;
+    color: var(--cor-primaria);
 }
 
 .submit-form{
@@ -73,15 +75,16 @@
     max-width: 300px;
     margin: 0 auto;
     background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
     border-radius: 6px;
     cursor: pointer;
     color: white;
-    transition: .4s all ease;
 }
 
 .submit-form:hover{
     transform: scale(1.05);
-    background-color: var(--secundaria);
+    background-color: transparent;
+    color: var(--cor-primaria);
 }
 
 .img-contato img{
