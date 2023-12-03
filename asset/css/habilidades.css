@@ -1,112 +1,79 @@
-.habilidades{
-    padding: 5rem 0;
-}
-
-/* .habilidades-container{
-    max-width: 1368px;
-    margin: 0 auto;
-    padding: 0 3rem;
-} */
-
-.habilidades-card i{
-    font-size: 3rem;
-}
-
-.tecnologias{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 7px;
-
-    grid-template-areas: 
-        "habi js"
-        "habi html"
-        "habi css"
-        "habi b"
-    ;
-}
-
-.habilidades-card{
-    color: #fff;
+.habilidades-content{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 1rem;
 }
 
-.tecnologias > div{
-    background-color: var(--cor-primaria);
-    padding: 2rem;
-    border-radius: 26px;
-}
-
-.tecnologias > div:nth-child(1){
-    grid-area: habi;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    background: none;
-    border-left: 2px solid var(--cor-primaria);
-    border-bottom: 2px solid var(--cor-primaria);
-    border-radius: 2px;
-}
-
-.tecnologias > div:nth-child(1) h1{
+.habilidades-content h1{
     color: var(--cor-primaria);
     font-size: var(--font-size-title);
 }
 
-.tecnologias > div:nth-child(1) p{
+.habilidades-content p{
+    color: var(--secundaria);
+    width: 100%;
+    max-width: 500px;
+}
+
+.tecnologias-i{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.card-hab{
+    border: 2px solid var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 26px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.card-hab i{
+    font-size: 3rem;
+    background-color: var(--cor-primaria);
+    padding: 8px;
+    color: #fff;
+    border-radius: 6px;
+    position: relative;
+    transition: .4s;
+}
+
+.card-hab:hover i{
+    border-radius: 50%;
+}
+
+.card-hab h2{
+    font-size: var(--font-size-title);
+    color: var(--cor-primaria);
+}
+
+.card-hab p{
     color: var(--secundaria);
 }
 
-.tecnologias > div:nth-child(2){
-    grid-area: js;
+.img-habi{
+    width: 600px;
 }
 
-.tecnologias > div:nth-child(3){
-    grid-area: html;
+.img-habi img{
+    width: 100%;
 }
 
-.tecnologias > div:nth-child(4){
-    grid-area: css;
-}
-
-.tecnologias > div:nth-child(5){
-    grid-area: b;
-}
-
-@media screen and (max-width: 1036px){
-    .tecnologias{
-        gap: 10px;
-        grid-template-areas: 
-            "habi html"
-            "css b"
-            "js js"
-        ;
-    }
-    
-}
-
-@media screen and (max-width: 769px){
-    .tecnologias{
-        grid-template-areas: 
-            "habi habi"
-            "js js"
-            "html html"
-            "css css"
-            "b b"
-        ;
-    }
-
-    .tecnologias p{
-        text-align: justify;
+@media screen and (max-width: 920px){
+    .tecnologias-i{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-
-@media screen and (max-width: 360px) {
-    .tecnologias > div:nth-child(1) h1{
-        color: var(--cor-primaria);
-        font-size: 2rem;
+@media screen and (max-width: 600px){
+    .tecnologias-i{
+        grid-template-columns: repeat(1, 1fr);
     }
 }

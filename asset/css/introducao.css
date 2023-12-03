@@ -10,6 +10,7 @@
     height: 100vh;
     background-color: #ff6347;
     clip-path: circle(30% at 90% 2%);
+    z-index: -1;
 }
 
 .introducao-container{

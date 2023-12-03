@@ -1,7 +1,4 @@
 .project-container{
-     max-width: 1368px;
-     margin: 0 auto;
-     padding: 0 3rem;
      display: flex;
      flex-direction: column;
      gap: 2rem;
@@ -9,8 +6,7 @@
 
 .project-container h1{
      color: var(--cor-primaria);
-     font-size: 3rem;
-     margin-top: 3rem;
+     font-size: var(--font-size-title);
 }
 
 .box-project{

@@ -45,3 +45,11 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+
+htmlHover = document.getElementById('html-hover')
+cardHab = document.getElementById('card-hab')
+
+htmlHover.addEventListener("click", () =>{
+  cardHab.classList.toggle(active)
+})
