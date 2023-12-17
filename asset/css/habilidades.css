@@ -30,9 +30,12 @@
     gap: 1rem;
     padding: 1rem;
     border-radius: 26px;
-    position: relative;
-    overflow: hidden;
+    transition: .2s;
+}
 
+.card-hab:hover{
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.266);
 }
 
 .card-hab i{

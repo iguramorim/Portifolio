@@ -19,6 +19,7 @@
      gap: 10px;
      padding: 16px;
      border-radius: 26px;
+     height: 400px;
 }
 
 .swiper-pagination-bullet-active{
@@ -27,6 +28,7 @@
 
 .swiper-slide h1{
      color: var(--cor-primaria);
+     margin-top: 3rem;
 }
 
 .swiper-slide p{

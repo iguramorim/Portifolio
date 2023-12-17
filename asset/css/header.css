@@ -9,6 +9,10 @@
     z-index: 99999;
 }
 
+.header.dark{
+    background-color: #232c35;
+}
+
 .fechar-menu{
     background-color: #ff634714;
     position: absolute;
@@ -103,6 +107,52 @@
     border-radius: 3px;
     transition: .4s all ease;
 }
+
+.tema{
+    padding-left: 2rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.checkbox{
+    opacity: 0;
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+
+    gap: 1.2rem;
+}
+
+.label .ball{
+    position: absolute;
+    left: 0;
+    border-radius: 100px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.label i{
+    color: var(--cor-primaria);
+    font-size: 1.8rem;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(48px);
+}
+
 
 @media screen and (max-width: 920px) {
     .menu{

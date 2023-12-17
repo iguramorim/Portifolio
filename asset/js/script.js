@@ -47,9 +47,12 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-htmlHover = document.getElementById('html-hover')
-cardHab = document.getElementById('card-hab')
+const chk = document.getElementById('chk');
 
-htmlHover.addEventListener("click", () =>{
-  cardHab.classList.toggle(active)
-})
+const header = document.getElementById('header');
+
+chk.addEventListener('change', () => {
+  body.classList.toggle('dark');
+  header.classList.toggle('dark');
+});
+

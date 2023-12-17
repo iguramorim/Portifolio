@@ -33,13 +33,18 @@
     letter-spacing: 1px;
 }
 
-body {
+#body {
     overflow-x: hidden;
     --sb-track-color: #ffffff;
     --sb-thumb-color: #ff6347;
     --sb-size: 11px;
 
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+#body.dark{
+    background-color: #232c35;
+    color: white;
 }
 
 .center-auto {
